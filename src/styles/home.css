@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double+Ink:wght@100..900&family=Iosevka+Charon:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* =====================================================
+    HERO BANNER SECTION (MAIN ENTRY VIEW)
+  
+
+.hero {
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(120deg, #dbeeb6, #7cc7b6);
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin-bottom: 30px;
+  color: #0048ff;
+  text-shadow: 6px 4px 8px rgba(44, 1, 152, 0.3);
+  font-family: "Playfair Display", serif;
+}
+
+.hero p {
+  font-size: 20px;
+  color: #05541b;
+  margin-bottom: 30px;
+}
+
+/* =====================================================
+   🛠️ FEATURES SHOWCASE SECTION (SYSTEM CAPABILITIES)
+   ===================================================== */
+
+.features {
+  padding: 10px 10%;
+  text-align: center;
+  color: #545105;
+  text-shadow: 6px 4px 8px rgba(44, 1, 152, 0.3);
+  font-family: "Iosevka Charon", serif;
+}
+
+.feature-grid {
+  margin-top: 40px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.feature-card {
+  background: #ffffff;
+  color: #6d6aff;
+  padding: 10px;
+  border-radius: 15px;
+  width: 250px;
+  transform: scale(1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.feature-card:hover {
+  transform: scale(1.08);
+  background: #fffad1d3;
+}
+
+/* =====================================================
+   🎯 CALL TO ACTION (CTA) CONVERSION ZONE
+   ===================================================== */
+
+.cta {
+  padding: 0px;
+  text-align: center;
+  color: #05541b;
+  font-family: "Playfair Display", serif;
+  margin-top: 20px;
+}
+
+/* Primary Programmatic Navigation Route Button */
+.main-btn {
+  background: #f2f26c;
+  padding: 14px 30px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #000000;
+  text-shadow: 6px 4px 8px rgba(44, 1, 152, 0.3);
+  font-weight: bold;
+  display: inline-block;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  font-size: 20px;
+  margin-top: 20px;
+  border: none;
+}
+
+.main-btn:hover {
+  transform: scale(1.2);
+  background-color: #e0e05a;
+}

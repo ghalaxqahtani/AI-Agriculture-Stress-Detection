@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double+Ink:wght@100..900&family=Iosevka+Charon:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* =====================================================
+   🌍 GLOBAL WORKSPACE PAGE LAYOUT
+   ===================================================== */
+
+.analysis-page {
+  min-height: 100vh;
+  background: linear-gradient(to right, #fff06e, #84d7c4);
+  padding: 60px;
+  text-align: center;
+}
+
+.analysis-page h1 {
+  color: #ffffff;
+  margin-bottom: 40px;
+  font-size: 45px;
+  text-shadow: 0 0 8px #000000cb;
+}
+
+/* =====================================================
+   📁 PHASE 1: FILE UPLOAD CONTAINER
+   ===================================================== */
+
+.upload-center {
+  background: rgba(181, 255, 174, 0.72);
+  width: 500px;
+  margin: auto;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.upload-box {
+  color: #ff0000;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+
+.upload-box:hover {
+  transform: scale(1.05);
+}
+
+/* =====================================================
+   📊 PHASE 2: DIAGNOSTIC GRID SYSTEM
+   ===================================================== */
+
+.analysis-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: stretch;
+}
+
+/* =====================================================
+   📸 LEFT COLUMN: IMAGE METADATA DECK
+   ===================================================== */
+
+.left-card {
+  background: rgba(181, 255, 174, 0.72);
+  color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.preview {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.Image-ID {
+  background: black;
+  margin-top: 20px;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 5px;
+}
+
+/* =====================================================
+   🧠 RIGHT COLUMN: AI INSIGHT & RECON Deck
+   ===================================================== */
+
+.right-card {
+  background: linear-gradient(135deg, #85ff51, #001a24);
+  color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Iosevka Charon", serif;
+}
+
+/* Component Section Header */
+.result-title {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Diagnostic Metrics Output Fields */
+.result-box {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+/* Predictive Insight Statement Blocks */
+.prediction-text {
+  background: rgba(0, 0, 0, 0.3);
+  line-height: 1.6;
+}
+
+/* Core Property Value Titles */
+.label {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Action Directive Layout Enclosure */
+.actions-box {
+  margin-top: 15px;
+  text-align: left; /* Restricts structure positioning neatly to the left edge margin */
+}
+
+.actions-title {
+  text-align: left; /* Aligns description text left */
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.actions-box ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.actions-box li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+/* Privacy Context Scope Select Controls */
+.visibility {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* =====================================================
+   🎯 INTERACTIVE USER EMISSION COMPONENTS (BUTTONS)
+   ===================================================== */
+
+.analyze-btn {
+  background: #2e9710;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.analyze-btn:hover {
+  transform: scale(1.05);
+}
+
+.save-btn {
+  margin-top: 25px;
+  background: #a29d57;
+  color: white;
+  font-size: 18px;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  font-family: "Playfair Display", serif;
+  transition: background-color 0.3s ease;
+}
+
+.save-btn:hover {
+  background-color: #8c8749;
+}
