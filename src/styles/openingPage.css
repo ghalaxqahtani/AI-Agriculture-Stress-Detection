@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
+
+/* =====================================================
+   🌍 CORE SPLASH SCREEN VIEWPORT CONTAINER
+   ===================================================== */
+
+.opening {
+  position: relative;
+  background-image: url("../assets/open1.jpg");
+  color: rgb(16, 55, 17);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* * 🌓 OVERLAY MASK LAYER
+ * Generates an automated semi-transparent dark mask covering background imagery to maximize 
+ * foreground typography legibility. Keeps index coordinates low to stay behind content.
+ */
+.opening::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: 0; /* Keeps the overlay layer underneath foreground components */
+}
+
+/* =====================================================
+   📦 FOREGROUND HERO CONTENT WRAPPER
+   ===================================================== */
+
+.opening-content {
+  position: relative;
+  z-index: 2; /* Forces content blocks to float structurally above the overlay mask layer */
+  text-align: center;
+  margin-top: 100px;
+  padding: 0 30px;
+  font-family: 'Playfair Display', serif;
+}
+
+.text1_h1 {
+  font-size: 45px;
+  max-width: 900px;
+  margin: auto;
+  color: #fde8c0;
+  text-shadow: 0 0 8px #ffbe46;
+}
+
+.text1_h3 {
+  padding: 50px 30px;
+  margin: auto;
+  font-size: 20px;
+  max-width: 700px;
+  color: #ffffff;
+}
+
+/* =====================================================
+   🎯 INTERACTIVE USER FUNNEL ACTION CONTROLS
+   ===================================================== */
+
+.buttons2-3 {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  padding: 15px 50px;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  background: #ffd588;
+  color: #000000;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.btn:hover {
+  background: #4dc449;
+  color: #ffffff; /* Enhances color contrast ratios for accessibility when hovering */
+}
+
+.btn:active {
+  transform: scale(0.97); /* Adds slight mechanical feedback when clicked */
+}

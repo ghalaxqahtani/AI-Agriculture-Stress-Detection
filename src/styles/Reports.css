@@ -1,0 +1,129 @@
+.report-title{
+    text-align:center;
+    color:white;
+    margin-top:40px;
+}
+
+/* container */
+.reports-container{
+    margin:40px auto;
+    width:75%;
+    background: rgba(255,255,255,0.2);
+    padding:40px;
+    border-radius:20px;
+}
+
+/* search */
+.search-box{
+    display:flex;
+    gap:10px;
+    margin-bottom:30px;
+}
+
+.search-box input{
+    flex:1;
+    padding:14px;
+    border-radius:10px;
+    border:none;
+}
+
+.search-box button{
+    background:#27ae60;
+    color:white;
+    padding:12px 20px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+/* report */
+.report-card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+}
+
+/* header */
+.report-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+/* 🔥 اللوقو */
+.logo img{
+    width:60px;
+    height:60px;
+    object-fit:contain;
+}
+
+.date{
+    text-align:right;
+    color:#666;
+}
+
+.report-id{
+    color:#777;
+}
+
+/* image */
+.report-image-center{
+    display:flex;
+    justify-content:center;
+    margin:20px 0;
+}
+
+.report-image-center img{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:12px;
+}
+
+/* details */
+.report-details-center{
+    text-align:center;
+}
+
+.stress-line{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin-top:10px;
+}
+
+.stress-name{
+    font-weight:bold;
+}
+
+.severity{
+    background:#e74c3c;
+    color:white;
+    padding:5px 10px;
+    border-radius:10px;
+}
+
+/* prediction */
+.prediction-box{
+    margin-top:15px;
+    padding:12px;
+    border-left:4px solid green;
+    background:#f4f9f4;
+    display:inline-block;
+}
+
+/* actions */
+.actions-section{
+    margin-top:20px;
+}
+
+/* button */
+.download-btn{
+    margin-top:20px;
+    background:#2980b9;
+    color:white;
+    padding:12px 20px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
